@@ -4,11 +4,7 @@ calculator.py
 
 One function per operation, in order.
 """
-import math
-
 # First example
-def add(a, b): 
-    pass
 import math
 
 def add(a, b):
@@ -28,12 +24,11 @@ def div(a, b):
 def log(a, b):
     # use math library + raise ValueError for invalid inputs/base
     if a <= 0 or a == 1 or b <= 0:
-        raise ValueError("Invalid base or argument for logarithm")
+        raise ValueError
     return math.log(b, a)
 
 def exp(a, b):
     return a ** b
-    return a + b
 
 def subtract(a, b):
     return a - b
