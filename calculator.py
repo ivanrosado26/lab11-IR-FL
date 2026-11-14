@@ -1,10 +1,7 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+# https://github.com/ivanrosado26/lab11-IR-FL
+# Partner 1: Ivan Rosado
+# Partner 2: Fabio Lopez
 
-One function per operation, in order.
-"""
-# First example
 import math
 
 def square_root(a):
