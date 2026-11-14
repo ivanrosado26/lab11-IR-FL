@@ -20,12 +20,15 @@ def sub(a, b):
 def mul(a, b):
     return a * b
 
-
+def div(a, b):
+    if a == 0:  # or check depending on your division order (raise ZeroDivisionError if divisor is 0)
+        raise ZeroDivisionError
+    return b / a
 
 def log(a, b):
     # use math library + raise ValueError for invalid inputs/base
-    if ...:
-        raise ValueError
+    if a <= 0 or a == 1 or b <= 0:
+        raise ValueError("Invalid base or argument for logarithm")
     return math.log(b, a)
 
 def exp(a, b):
@@ -37,11 +40,6 @@ def subtract(a, b):
 
 def multiply(a, b):
     return a * b
-
-def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError
-    return b / a
 
 def logarithm (a, b):
     if a <=0 or a == 1 or b <= 0:
